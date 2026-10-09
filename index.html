@@ -44,7 +44,7 @@
 <ul>
   <li>MagiCal <strong>non ha server</strong>, non richiede un account e non contiene pubblicità, strumenti di analisi o di tracciamento.</li>
   <li>Il testo che scrivi viene interpretato <strong>sul telefono</strong>. Lo sviluppatore non riceve e non conserva i tuoi eventi, promemoria, luoghi o frasi, e nessun dato viene inviato a servizi di intelligenza artificiale.</li>
-  <li>Solo due funzioni, e solo se le usi, comunicano con servizi esterni: il <strong>meteo</strong> (Open-Meteo) e la <strong>ricerca di indirizzi</strong> (servizio di geocodifica di Android).</li>
+  <li>Solo due funzioni, e solo se le usi, comunicano con servizi esterni: il <strong>meteo</strong> (MET Norway, l'Istituto meteorologico norvegese) e la <strong>ricerca di indirizzi</strong> (servizio di geocodifica di Android).</li>
 </ul>
 </div>
 
@@ -63,8 +63,8 @@
 </table>
 
 <h2>3. Servizi esterni</h2>
-<h3>Open-Meteo (meteo)</h3>
-<p>Solo se attivi il meteo nelle Impostazioni (è spento per impostazione predefinita). L'app invia a <a href="https://open-meteo.com/">Open-Meteo</a> la posizione arrotondata a circa 1 km (la posizione attuale, se hai concesso il permesso, altrimenti il primo dei tuoi luoghi salvati) e il fuso orario; come per ogni richiesta su Internet, Open-Meteo riceve anche l'indirizzo IP del dispositivo. Le previsioni ricevute restano sul telefono e vengono aggiornate al massimo ogni 3 ore. Vedi i <a href="https://open-meteo.com/en/terms">termini e la privacy di Open-Meteo</a>.</p>
+<h3>MET Norway (meteo)</h3>
+<p>Solo se attivi il meteo nelle Impostazioni (è spento per impostazione predefinita). L'app invia all'<a href="https://www.met.no/en">Istituto meteorologico norvegese (MET Norway)</a> la posizione arrotondata a circa 1 km (la posizione attuale, se hai concesso il permesso, altrimenti il primo dei tuoi luoghi salvati) e, come richiesto dal servizio, il nome e la versione dell'app con l'email di supporto dello sviluppatore, che non contengono dati tuoi. Come per ogni richiesta su Internet, il servizio riceve anche l'indirizzo IP del dispositivo. Le previsioni restano sul telefono e vengono aggiornate al massimo ogni 3 ore. I dati meteo sono distribuiti con licenza CC BY 4.0. Vedi i <a href="https://api.met.no/doc/TermsOfService">termini di servizio di MET Norway</a>.</p>
 <h3>Geocodifica di Android (Luoghi)</h3>
 <p>Quando cerchi un indirizzo o usi la posizione attuale nella schermata Luoghi, l'app usa il servizio di geocodifica del sistema Android, che sui dispositivi con Google Play services può inviare a Google il testo cercato o le coordinate. Vedi l'<a href="https://policies.google.com/privacy">informativa di Google</a>.</p>
 <h3>Google Play services (posizione)</h3>
@@ -85,7 +85,7 @@
 <p><strong>Backup:</strong> se il backup di Android è attivo, il sistema può includere i dati locali di MagiCal nel backup del tuo account Google, gestito e cifrato da Google. Puoi disattivarlo dalle Impostazioni di Android.</p>
 
 <h2>6. Sicurezza</h2>
-<p>I dati sono salvati nella memoria privata dell'app, protetta da Android. Le richieste a Open-Meteo usano HTTPS.</p>
+<p>I dati sono salvati nella memoria privata dell'app, protetta da Android. Le richieste a MET Norway usano HTTPS.</p>
 
 <h2>7. Minori</h2>
 <p>MagiCal non è destinata ai minori di 13 anni e non raccoglie consapevolmente dati di minori.</p>
@@ -109,7 +109,7 @@
 <ul>
   <li>MagiCal has <strong>no servers</strong>, needs no account and contains no ads, analytics or tracking.</li>
   <li>What you type is understood <strong>on your phone</strong>. The developer does not receive or store your events, reminders, places or sentences, and no data is sent to AI services.</li>
-  <li>Only two features, and only if you use them, talk to outside services: the <strong>weather</strong> (Open-Meteo) and <strong>address search</strong> (Android's geocoding service).</li>
+  <li>Only two features, and only if you use them, talk to outside services: the <strong>weather</strong> (MET Norway, the Norwegian Meteorological Institute) and <strong>address search</strong> (Android's geocoding service).</li>
 </ul>
 </div>
 
@@ -128,8 +128,8 @@
 </table>
 
 <h2>3. Outside services</h2>
-<h3>Open-Meteo (weather)</h3>
-<p>Only if you turn on the weather in Settings (off by default). The app sends <a href="https://open-meteo.com/">Open-Meteo</a> your location rounded to about 1 km (your current location if you granted the permission, otherwise your first saved place) and your time zone; as with any Internet request, Open-Meteo also receives the device's IP address. The forecast stays on the phone and is refreshed at most every 3 hours. See <a href="https://open-meteo.com/en/terms">Open-Meteo's terms and privacy</a>.</p>
+<h3>MET Norway (weather)</h3>
+<p>Only if you turn on the weather in Settings (off by default). The app sends the <a href="https://www.met.no/en">Norwegian Meteorological Institute (MET Norway)</a> your location rounded to about 1 km (your current location if you granted the permission, otherwise your first saved place) and, as the service requires, the app's name and version with the developer's support email, which contain no data of yours. As with any Internet request, the service also receives the device's IP address. The forecast stays on the phone and is refreshed at most every 3 hours. Weather data is licensed under CC BY 4.0. See <a href="https://api.met.no/doc/TermsOfService">MET Norway's terms of service</a>.</p>
 <h3>Android geocoding (Places)</h3>
 <p>When you search for an address or use your current location in the Places screen, the app uses Android's geocoding service, which on devices with Google Play services may send the search text or the coordinates to Google. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
 <h3>Google Play services (location)</h3>
@@ -150,7 +150,7 @@
 <p><strong>Backup:</strong> if Android backup is on, the system may include MagiCal's local data in the backup of your Google account, managed and encrypted by Google. You can turn it off in Android Settings.</p>
 
 <h2>6. Security</h2>
-<p>Data is stored in the app's private storage, protected by Android. Requests to Open-Meteo use HTTPS.</p>
+<p>Data is stored in the app's private storage, protected by Android. Requests to MET Norway use HTTPS.</p>
 
 <h2>7. Children</h2>
 <p>MagiCal is not directed to children under 13 and does not knowingly collect data from children.</p>
