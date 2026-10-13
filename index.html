@@ -37,14 +37,15 @@
 <!-- ============================== ITALIANO ============================== -->
 <section id="it" lang="it">
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Ultimo aggiornamento: 9 ottobre 2026</p>
+<p class="muted">Ultimo aggiornamento: 13 ottobre 2026</p>
 
 <div class="summary">
 <h3>In breve</h3>
 <ul>
   <li>MagiCal <strong>non ha server</strong>, non richiede un account e non contiene pubblicità, strumenti di analisi o di tracciamento.</li>
   <li>Il testo che scrivi viene interpretato <strong>sul telefono</strong>. Lo sviluppatore non riceve e non conserva i tuoi eventi, promemoria, luoghi o frasi, e nessun dato viene inviato a servizi di intelligenza artificiale.</li>
-  <li>Solo due funzioni, e solo se le usi, comunicano con servizi esterni: il <strong>meteo</strong> (MET Norway, l'Istituto meteorologico norvegese) e la <strong>ricerca di indirizzi</strong> (servizio di geocodifica di Android).</li>
+  <li>Il <strong>microfono</strong> si usa solo mentre detti; screenshot, foto e PDF che condividi vengono letti <strong>sul telefono</strong> e non vengono salvati né inviati.</li>
+  <li>Comunicano con servizi esterni solo queste funzioni, e solo se le usi: il <strong>meteo</strong> (MET Norway, l'Istituto meteorologico norvegese), la <strong>ricerca di indirizzi</strong> (servizio di geocodifica di Android), la <strong>dettatura</strong> (riconoscimento vocale del telefono, salvo la dettatura privata) e, quando leggi un'immagine, i <strong>dati tecnici di funzionamento</strong> della libreria ML Kit di Google.</li>
 </ul>
 </div>
 
@@ -56,6 +57,9 @@
   <tr><th>Dato / permesso</th><th>Uso</th></tr>
   <tr><td>Calendari</td><td>Mostrare, creare, modificare ed eliminare gli eventi dei calendari del dispositivo, anche nei widget. Gli eventi restano nel sistema calendario di Android; la sincronizzazione con Google, Outlook o altri account è svolta da quegli account, secondo le loro informative. MagiCal non trasmette i dati dei calendari allo sviluppatore né a terzi.</td></tr>
   <tr><td>Posizione precisa e, se scegli «Consenti sempre», in background</td><td>Solo per: (a) i promemoria legati a un luogo («quando arrivo a casa»), confrontando la posizione con i luoghi che salvi tramite il servizio di geofencing di Google Play services; (b) «Usa la posizione attuale» nella schermata Luoghi; (c) il meteo, se lo attivi. La posizione non viene inviata allo sviluppatore.</td></tr>
+  <tr><td>Microfono</td><td>Solo per dettare un evento: mentre tieni premuto il microfono, o dopo «Detta evento» dal widget o dalla scorciatoia. L'audio va al servizio di riconoscimento vocale del telefono (vedi punto 3), che restituisce il testo; con la <strong>dettatura privata</strong> il riconoscimento avviene sul dispositivo e l'audio non esce dal telefono. MagiCal non registra, non salva e non invia l'audio.</td></tr>
+  <tr><td>Immagini, foto e PDF</td><td>Solo quelli che scegli di condividere con MagiCal o che scatti con «Fotografa» (con l'app Fotocamera del telefono: MagiCal non chiede il permesso della fotocamera). Il testo viene letto sul telefono con ML Kit, il cui modello è incluso nell'app; l'immagine non viene inviata a nessuno e la foto scattata viene cancellata subito dopo la lettura.</td></tr>
+  <tr><td>Appunti</td><td>Solo quando tocchi «Incolla» nel pannello di inserimento: MagiCal legge il testo copiato per proporre l'evento. Prima del tocco controlla soltanto se negli appunti c'è del testo.</td></tr>
   <tr><td>Notifiche</td><td>Mostrare gli avvisi dei task e dei promemoria.</td></tr>
   <tr><td>Allarmi esatti e avvio del dispositivo</td><td>Far partire gli avvisi all'orario giusto, anche dopo un riavvio. Non riguardano dati personali.</td></tr>
   <tr><td>Internet</td><td>Solo per le funzioni descritte al punto 3.</td></tr>
@@ -71,6 +75,10 @@
 <p>La posizione e i promemoria legati a un luogo usano le API di posizione di Google Play services, che elaborano la posizione secondo l'<a href="https://policies.google.com/privacy">informativa di Google</a>.</p>
 <h3>Google Play (acquisto della versione completa)</h3>
 <p>Se acquisti MagiCal Premium, il pagamento è gestito interamente da Google Play: MagiCal non vede né conserva dati di pagamento. Dopo l'acquisto, Google Play fornisce all'app una conferma firmata (identificativo dell'ordine e dell'acquisto, prodotto, data); MagiCal la conserva solo sul telefono e la verifica con Google Play per sbloccare le funzioni Premium, anche dopo una reinstallazione. Vedi l'<a href="https://policies.google.com/privacy">informativa di Google</a>.</p>
+<h3>Riconoscimento vocale (dettatura)</h3>
+<p>Quando detti, l'audio è elaborato dal servizio di riconoscimento vocale installato sul telefono (di solito quello di Google), che può inviarlo ai propri server secondo la sua informativa (vedi l'<a href="https://policies.google.com/privacy">informativa di Google</a>). MagiCal riceve solo il testo riconosciuto. Con la <strong>dettatura privata</strong> (versione completa) MagiCal chiede il riconoscimento sul dispositivo: l'audio non lascia il telefono e funziona anche senza rete. Per scaricare la lingua necessaria il telefono si collega una volta ai server del fornitore del riconoscimento.</p>
+<h3>Google ML Kit (lettura di screenshot, foto e PDF)</h3>
+<p>Il testo delle immagini e dei PDF viene riconosciuto sul telefono dalla libreria ML Kit di Google, con il modello incluso nell'app: il contenuto delle immagini non viene inviato. Come descritto da Google nella pagina <a href="https://developers.google.com/ml-kit/android-data-disclosure">Data disclosure di ML Kit</a>, la libreria invia a Google, cifrati, dati tecnici di funzionamento per diagnostica e statistiche d'uso: informazioni sul dispositivo (produttore, modello, versione di Android), nome e versione dell'app, un identificativo per installazione non pensato per identificare l'utente o il dispositivo, tempi di elaborazione, formato e dimensioni dell'immagine e codici di errore. Google dichiara di non trasferire questi dati a terzi.</p>
 <h3>Link alle riunioni</h3>
 <p>Il pulsante «Partecipa» apre il link di Teams, Zoom, Meet o Webex già presente nell'evento con l'app o il sito di quel servizio. MagiCal non invia dati a questi servizi.</p>
 
@@ -78,8 +86,8 @@
 <ul>
   <li>Non vende né condivide dati personali.</li>
   <li>Non mostra pubblicità e non crea profili.</li>
-  <li>Non usa strumenti di analisi, statistiche d'uso o segnalazione automatica degli errori.</li>
-  <li>Non invia testi o eventi a servizi di intelligenza artificiale.</li>
+  <li>Non usa strumenti di analisi propri né segnalazione automatica degli errori; l'unica eccezione sono i dati tecnici di ML Kit descritti al punto 3, inviati solo quando leggi un'immagine o un PDF.</li>
+  <li>Non invia testi, eventi, immagini o audio a servizi di intelligenza artificiale, né allo sviluppatore.</li>
 </ul>
 
 <h2>5. Conservazione e cancellazione</h2>
@@ -87,7 +95,7 @@
 <p><strong>Backup:</strong> se il backup di Android è attivo, il sistema può includere i dati locali di MagiCal nel backup del tuo account Google, gestito e cifrato da Google. Puoi disattivarlo dalle Impostazioni di Android.</p>
 
 <h2>6. Sicurezza</h2>
-<p>I dati sono salvati nella memoria privata dell'app, protetta da Android. Le richieste a MET Norway usano HTTPS.</p>
+<p>I dati sono salvati nella memoria privata dell'app, protetta da Android. Le richieste a MET Norway e i dati tecnici di ML Kit usano HTTPS.</p>
 
 <h2>7. Minori</h2>
 <p>MagiCal non è destinata ai minori di 13 anni e non raccoglie consapevolmente dati di minori.</p>
@@ -104,14 +112,15 @@
 <!-- ============================== ENGLISH ============================== -->
 <section id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="muted">Last updated: October 9, 2026</p>
+<p class="muted">Last updated: October 13, 2026</p>
 
 <div class="summary">
 <h3>In short</h3>
 <ul>
   <li>MagiCal has <strong>no servers</strong>, needs no account and contains no ads, analytics or tracking.</li>
   <li>What you type is understood <strong>on your phone</strong>. The developer does not receive or store your events, reminders, places or sentences, and no data is sent to AI services.</li>
-  <li>Only two features, and only if you use them, talk to outside services: the <strong>weather</strong> (MET Norway, the Norwegian Meteorological Institute) and <strong>address search</strong> (Android's geocoding service).</li>
+  <li>The <strong>microphone</strong> is used only while you dictate; screenshots, photos and PDFs you share are read <strong>on the phone</strong> and are never saved or sent.</li>
+  <li>Only these features, and only if you use them, talk to outside services: the <strong>weather</strong> (MET Norway, the Norwegian Meteorological Institute), <strong>address search</strong> (Android's geocoding service), <strong>dictation</strong> (the phone's speech recognition, except private dictation) and, when you read an image, the <strong>technical usage data</strong> of Google's ML Kit library.</li>
 </ul>
 </div>
 
@@ -123,6 +132,9 @@
   <tr><th>Data / permission</th><th>Use</th></tr>
   <tr><td>Calendars</td><td>Show, create, edit and delete events in the device's calendars, including in widgets. Events stay in Android's calendar system; syncing with Google, Outlook or other accounts is done by those accounts under their own policies. MagiCal does not send calendar data to the developer or to third parties.</td></tr>
   <tr><td>Precise location and, if you choose "Allow all the time", background location</td><td>Only for: (a) place-based reminders ("when I get home"), comparing your location with the places you save through the geofencing service of Google Play services; (b) "Use current location" in the Places screen; (c) the weather, if you turn it on. Your location is not sent to the developer.</td></tr>
+  <tr><td>Microphone</td><td>Only to dictate an event: while you hold the microphone, or after "Dictate event" from the widget or shortcut. The audio goes to the phone's speech recognition service (see section 3), which returns the text; with <strong>private dictation</strong> recognition happens on the device and the audio never leaves the phone. MagiCal does not record, save or send the audio.</td></tr>
+  <tr><td>Images, photos and PDFs</td><td>Only those you choose to share with MagiCal or take with "Photo" (through the phone's Camera app: MagiCal does not ask for camera permission). The text is read on the phone with ML Kit, whose model is included in the app; the image is sent to no one and the photo taken is deleted right after reading.</td></tr>
+  <tr><td>Clipboard</td><td>Only when you tap "Paste" in the quick add panel: MagiCal reads the copied text to suggest the event. Before the tap it only checks whether the clipboard holds text.</td></tr>
   <tr><td>Notifications</td><td>Show task and reminder alerts.</td></tr>
   <tr><td>Exact alarms and device start-up</td><td>Fire alerts at the right time, also after a restart. No personal data is involved.</td></tr>
   <tr><td>Internet</td><td>Only for the features in section 3.</td></tr>
@@ -138,6 +150,10 @@
 <p>Location and place-based reminders use the location APIs of Google Play services, which process location under <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
 <h3>Google Play (purchase of the full version)</h3>
 <p>If you buy MagiCal Premium, payment is handled entirely by Google Play: MagiCal never sees or stores payment details. After the purchase, Google Play gives the app a signed confirmation (order and purchase identifiers, product, date); MagiCal keeps it only on the phone and checks it with Google Play to unlock the Premium features, also after a reinstall. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+<h3>Speech recognition (dictation)</h3>
+<p>When you dictate, the audio is processed by the speech recognition service installed on the phone (usually Google's), which may send it to its servers under its own policy (see <a href="https://policies.google.com/privacy">Google's privacy policy</a>). MagiCal only receives the recognized text. With <strong>private dictation</strong> (full version) MagiCal asks for on-device recognition: the audio never leaves the phone and it works offline too. To download the needed language, the phone connects once to the recognition provider's servers.</p>
+<h3>Google ML Kit (reading screenshots, photos and PDFs)</h3>
+<p>The text of images and PDFs is recognized on the phone by Google's ML Kit library, with the model included in the app: the content of the images is not sent. As Google describes on the <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a> page, the library sends Google encrypted technical usage data for diagnostics and usage analytics: device information (manufacturer, model, Android version), app name and version, a per-installation identifier not intended to identify the user or the device, processing times, image format and size, and error codes. Google states that it does not transfer this data to third parties.</p>
 <h3>Meeting links</h3>
 <p>The "Join" button opens the Teams, Zoom, Meet or Webex link already in the event with that service's app or website. MagiCal sends no data to these services.</p>
 
@@ -145,8 +161,8 @@
 <ul>
   <li>It does not sell or share personal data.</li>
   <li>It shows no ads and builds no profiles.</li>
-  <li>It uses no analytics, usage statistics or automatic crash reporting.</li>
-  <li>It does not send text or events to AI services.</li>
+  <li>It uses no analytics of its own and no automatic crash reporting; the only exception is ML Kit's technical data described in section 3, sent only when you read an image or PDF.</li>
+  <li>It does not send text, events, images or audio to AI services, or to the developer.</li>
 </ul>
 
 <h2>5. Retention and deletion</h2>
@@ -154,7 +170,7 @@
 <p><strong>Backup:</strong> if Android backup is on, the system may include MagiCal's local data in the backup of your Google account, managed and encrypted by Google. You can turn it off in Android Settings.</p>
 
 <h2>6. Security</h2>
-<p>Data is stored in the app's private storage, protected by Android. Requests to MET Norway use HTTPS.</p>
+<p>Data is stored in the app's private storage, protected by Android. Requests to MET Norway and ML Kit's technical data use HTTPS.</p>
 
 <h2>7. Children</h2>
 <p>MagiCal is not directed to children under 13 and does not knowingly collect data from children.</p>
