@@ -1,5 +1,3 @@
-# MagiCal – Privacy Policy
+# magical-privacy
 
-Informativa sulla privacy dell'app Android MagiCal / Privacy policy of the MagiCal Android app.
-
-https://antonio-cervo.github.io/magical-privacy/
+The MagiCal privacy policy moved to https://www.antcer.com/magical/privacy/ (English: https://www.antcer.com/en/magical-en/privacy/). This page redirects there.
